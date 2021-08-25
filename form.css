@@ -1,0 +1,220 @@
+html {
+  background: url(background2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+nav {
+  /* Sticky top nav bar so it stays at the top of the page even when the user scrolls down*/
+  background-color: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-menu {
+  list-style-type: none;
+}
+
+.nav-menu li {
+  display: inline-block;
+  padding: 20px 10px;
+  font-family: "Jost", sans-serif;
+}
+
+.nav-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  color: #ffde59;
+}
+
+.hero {
+  width: 50vw;
+  border-radius: 20px;
+  transform: scaleX(-1);
+  max-width: 100%;
+  height: auto;
+}
+
+.about {
+  width: 50vw;
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.title-area {
+  grid-column: span 2;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.paragraphs {
+  grid-column: 1/2;
+  grid-row: 2;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+.main-content-wrapper {
+  display: grid;
+  width: auto;
+  height: 100vh;
+  background-color: #e6f3e6;
+  grid-gap: 15px;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(2);
+  justify-content: center;
+
+  margin: 0;
+}
+
+.main-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.intro-paragraph {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.intro-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.intro-header-em {
+  color: #8c0d31;
+}
+
+.tag-line {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  display: inline;
+}
+
+.emphasis {
+  color: #326fa8;
+}
+
+.pie-icon {
+  display: inline;
+  width: 10%;
+  height: 10%;
+}
+
+p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.signupButton {
+  background-color: #70b86d;
+  border-radius: 28px;
+
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+
+.sign-in {
+  padding: 10px;
+  border-radius: 10px;
+  background: #70b86d;
+}
+
+.sign-in:hover {
+  color: #fff;
+}
+.singupButton:hover {
+  background-color: #5cbf2a;
+}
+.signupButton:active {
+  position: relative;
+  top: 1px;
+}
+
+#sign-up-button {
+  position: absolute;
+}
+
+form {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+.sticky-footer {
+  background-color: #e6f3e6;
+
+  font-family: "Poppins", sans-serif;
+  margin-top: auto;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
